@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0 ;
+        padding: 0 ;
+       
+      }
+      #myDIV {
+        /* width: 100vw; */
+        /* min-height: 100vh; */
+        /* background-color: grey; */
+        height: auto;
+        position: relative;
+        
+        
+      }
+      #mymain {
+        min-width: 100%;
+        max-height: auto;
+        /* display: block; */
+        display: flex;
+        /* flex-wrap: wrap; */
+        
+      }
+      .first {
+        width: 170px;
+        min-width: 130px;
+        max-height: 100vh;
+        min-height: 100vh;
+        /* sticky and fixed */
+        position: sticky;
+        top: 0;
+
+        flex-shrink: 0;
+        
+        
+        
+      }
+      #logo {
+        margin: 13% 30%;
+        max-width: 40%;
+        
+        
+      }
+      /* need to clear the concept */
+      .second {
+        /* margin: 150px; */
+        flex-grow: 1;
+        overflow-x: auto;
+        position: relative;
+        width: 100%;
+      
+        
+              
+        /* min-width: 88vw;
+        background-color: lightblue;
+        padding-left: 40px;
+        height: auto; */
+        
+      }
+
+
+      #topPic {
+        /* width: 88vw; */
+        max-height:auto ;
+        min-height: 85vh;
+        /* padding-top:35px; */
+        margin-top: 72px;
+        
+        background-color: #EA1F27;
+        /* margin-left: 150px; */
+        
+        
+        
+        
+      }
+      .topPic1{
+         /* margin-top: -35px; */
+         width: 100%;
+         max-height: 80vh;
+         
+        
+        
+      }
+      /* .topPic2{
+        width: 88vw;
+      } */
+     
+      .orderNow {
+        background: #303030;
+        margin-bottom: 3%;
+        
+        text-align: center;
+        justify-content: space-evenly;
+        padding-top: 17px;
+        height: 40px;
+        font-weight: bolder;
+        font-family: oswald, sans-serif;
+        width: 100%;
+        display: block;
+        font-size: large;
+
+        /* -webkit-transform: rotate(-10deg);  */
+      }
+
+      .orderNow:hover {
+        background: linear-gradient(to bottom right, #454545 50%, #303030 50%);
+
+        background-size: 190%, 100%;
+        background-position: right bottom;
+        transition-duration: 0.9s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        color: whitesmoke ;
+        text-align: center;
+        
+        
+      }
+     
+      .header{
+        background: #000;
+        width: 88%;
+        /* boht presan kiya sala */
+        /* min-width: calc(88vw - 130px);   */
+        max-height: 60px;
+        /* margin-left: 12vw; */
+        
+        position: fixed;
+        top: 0;
+        /* margin-left: 150px; */
+        
+        
+        
+        
+        
+        
+      }
+      .header-menu{
+        margin-top: 5px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        column-gap: 60px;
+        justify-content: flex-start;
+        
+        
+        margin-right: 2px;
+  
+        overflow-x: auto;
+      
+      }
+      .header-menu::-webkit-scrollbar{
+        height: 10px;
+    
+      }
+      .header-menu::-webkit-scrollbar-thumb{
+        background-color: orange;
+        /* max-width: 20%; */
+        outline: 2px solid grey;
+      }
+      /* .header-menu::-webkit-scrollbar-track{
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
+      } */
+      .header-menu a{
+        display: block;
+        box-sizing: content-box;
+        border-radius: 10px;
+        /* background-color: brown; */
+        width: 140%;
+        min-width: 110%;
+        height: 35px;
+        margin-bottom: 3px;
+        padding-top: 17px;
+        justify-content: normal;
+        text-align: center;
+        font-weight: 450;
+        text-transform: uppercase;
+        font-family: oswald,sans-serif;;
+         
+      }
+      .header-menu a:hover{
+       background-color: #EA1F27;
+      
+         
+      }
+     
+      
+    </style>
+  </head>
+  <body>
+    <div id="myDIV">
+      <div id="mymain">
+        <div class="first" style="background-color: black">
+          <div class="logoImg">
+            <img id="logo" src="Images/logo.png" alt="" />
+          </div>
+
+          <div id="list-item">
+            <br /><br />
+            <li class="orderNow"><a href="ORDER NOW ">ORDER NOW </a></li>
+            <li class="orderNow"><a href="OUR FOOD  ">OUR FOOD </a></li>
+            <li class="orderNow"><a href="FIND US   ">FIND US </a></li>
+            <li class="orderNow"><a href="NUTRITION ">NUTRITION </a></li>
+            <li class="orderNow"><a href="ABOUT US  ">ABOUT US </a></li>
+            <li class="orderNow"><a href="WHAT'S NEW">WHAT'S NEW</a></li>
+            <li class="orderNow"><a href="MORE +    ">MORE + </a></li>
+          </div>
+        </div> 
+        <div class="second">
+          <section class="header">
+            <ul class="header-menu">
+              <li ><a href="/.html"> Tacos</a></li>
+              <li><a href="/.html"> BURRITOS </a></li>
+              <li><a href="/.html" >BESTOFBELL </a></li>
+              <li><a href="/.html"> SPECIALTIES</a></li>
+              <li><a href="/.html">MEALS</a></li>
+              <li><a href="/.html">BREVERAGES</a></li>
+              <li><a href="/.html">SPICES</a></li>
+              <li><a href="/.html">VEG</a></li>
+              <li><a href="/.html">NONVEG</a></li>
+              <li><a href="/.html">Shareable</a></li>
+              <li><a href="/.html">desserts</a></li>
+        
+            </ul>
+          </section>
+          <section id="topPic">
+            <img class="topPic1" src="Images/toppicmenu.png" alt="wallpaper" /> 
+            
+            <img id="topPic5" style="max-width: 100%;" src="Images/toppicmenu2.png" alt="wallpaper" />
+            <img id="topPic5" style="max-width: 100%;" src="Images/toppicmenu3.png" alt="wallpaper" /> 
+          </section>
+        </div> 
+      </div>
+    </div>
+  </body>
+</html>
